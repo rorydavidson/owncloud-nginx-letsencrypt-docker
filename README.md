@@ -37,7 +37,7 @@ Change the hostname variables above and in the `docker-compose.yml` file as nece
 And then run docker compose up to get going.
 
 ```bash
-docker-compose up -d`
+docker-compose up -d
 ```
 
 You should then be able to access it at the domain name you entered and it will redirect to the https URL with a valid certificate.
