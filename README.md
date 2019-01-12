@@ -1,6 +1,6 @@
 # owncloud-nginx-letsencrypt-docker
 
-This is a simple repo with information on the a `docker-compose.yml` to run [ownCLoud](https://owncloud.org/) with an Nginx proxy and LetsEncrypt using Docker, as I was able to find anything that did everything I needed based on the official documentation from ownCloud and kept separate volumes for data.
+This is a simple repo with information on the a `docker-compose.yml` to run [ownCloud](https://owncloud.org/) with an Nginx proxy and LetsEncrypt using Docker, as I was able to find anything that did everything I needed based on the official documentation from ownCloud and kept separate volumes for data.
 
 ## Information sources
 
