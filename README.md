@@ -20,9 +20,11 @@ OWNCLOUD_VERSION=10.0
 OWNCLOUD_DOMAIN=localhost
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=admin
-HTTP_PORT=80
+HTTP_PORT=8080
 EOF
 ```
+
+The webserver is nginx-proxy and it will listen on ports 80 and 443 by default, redirecting traffic to HTTPS for your ownCloud instance. The HTTP_PORT environment variable sets which port ownCloud itself will listen.
 
 Change the hostname variables above and in the `docker-compose.yml` file as necessary specifically the variables in the owncloud service environment block:
 
