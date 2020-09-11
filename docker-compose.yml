@@ -13,6 +13,7 @@ volumes:
 services:
   nginx-proxy:
     image: jwilder/nginx-proxy
+    restart: always
     ports:
       - "80:80"
       - "443:443"
@@ -26,6 +27,7 @@ services:
 
   letsencrypt:
     image: jrcs/letsencrypt-nginx-proxy-companion:latest
+    restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /apps/docker-articles/nginx/vhost.d:/etc/nginx/vhost.d
